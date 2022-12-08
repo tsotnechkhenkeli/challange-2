@@ -1,0 +1,124 @@
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+
+* {
+    padding: 0rem;
+    margin: 0rem;
+    
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 1rem;
+    font-family: 'Big Shoulders Display' ,sans-serif;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color:hsl(31, 77%, 52%);
+}
+
+p {
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+img {
+    margin-bottom: 1rem;
+}
+
+a:hover {
+    color:blue;
+}
+
+a:active {
+    color:blue;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-height: 40rem;
+    
+}
+
+.sec__1 , .sec__2 , .sec__3 {
+    max-width: 15rem;
+    padding: 2rem;    
+    
+}
+
+.sec__1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5% 0 0 5%;
+}
+
+.sec__2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.sec__3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 5% 5% 0;
+}
+
+
+.text {
+    margin-bottom: 10rem;
+}
+
+
+.link {
+    background-color: hsl(0, 0%, 95%);
+    width: 50%;
+    height: 3rem;
+    border-radius: 20px;
+    
+    text-align: center;
+}
+
+.sec__1 .link:hover{
+    background-color: hsl(31, 77%, 52%);
+    border: 3px solid white;
+}
+
+.sec__1 .link:hover > a {
+    color: white;
+}
+
+.sec__2 .link:hover{
+    background-color: hsl(184, 100%, 22%);
+    border: 3px solid white;
+}
+
+.sec__2 .link:hover > a {
+    color: white;
+}
+.sec__3 .link:hover{
+    background-color: hsl(179, 100%, 13%);
+    border: 3px solid white;
+}
+
+.sec__3 .link:hover > a {
+    color: white;
+}
+
+
+@media only screen and (max-width: 375px){
+    body {
+        flex-direction: column;
+    }
+    .sec__1 {
+        border-radius: 5% 5% 0 0;
+    }
+
+    .sec__3 {
+        border-radius: 0 0 5% 5%;
+    }
+
+}
